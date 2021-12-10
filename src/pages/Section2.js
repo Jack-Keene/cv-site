@@ -4,7 +4,7 @@ import Background from './Background';
 import Header
  from './Header';
 
-function Section(props) {
+function Section2(props) {
 
     let background;
     if (props.background) {
@@ -19,15 +19,16 @@ function Section(props) {
     return (
         <div className={props.size}>
             {background}
-            {header}
-            <p>
-                {props.content}
-            </p>
-            <ul> 
-                {props.children}
-            </ul>                
+            <div className="grid">
+                <h1>{header}</h1>
+                <p>{props.content}</p>
+                <ul> 
+                    {props.children}
+                </ul>                
+
+            </div>
         </div>
     );
 };
 
-export default Section;
+export default Section2;

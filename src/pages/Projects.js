@@ -1,12 +1,12 @@
 import React from 'react';
 import '../index.css'
 import Background from '../images/chimney.png';
-import Section from './Section';
+import Section2 from './Section2';
 
 function Projects() {
     return (
         <div id="projectsContainer">
-            <Section 
+            <Section2
                 background={Background}
                 header="Projects"
                 size="section"/>

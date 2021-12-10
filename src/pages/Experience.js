@@ -1,21 +1,19 @@
 import React from 'react';
 import '../index.css'
-import Section from './Section';
+import Section2 from './Section2';
 import Job from './Job';
 
 function Experience() {
     return (
         <div id="experienceContainer">
-            <Section 
+            <Section2
             header={"Experience"}
-            size="section section-2"
-            >
-                <Job direction="left"/>
+            size="section section-2">
                 <Job direction="left"  job="Job 1" />
                 <Job direction="right" job="Job 1" />
                 <Job direction="left"  job="Job 1" />
                 <Job direction="right" job="Job 1" />
-            </Section>            
+            </Section2>            
         </div>
     );
 };

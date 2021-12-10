@@ -7,6 +7,12 @@
     /* cursor: none; */
 }
 
+.container {
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    overflow: auto;
+}
+
 :root {
     /* --nav-size: 60px; */
     --dark-color: #000;
@@ -15,20 +21,67 @@
 
 }
 
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    width: calc(100% - var(--nav-width));  
+    height: 100vh;
+    top: 0;
+    left: var(--nav-width);
+    color: var(--light-color);
+}
+
 h1 {
     text-align: center;
-    top: 5%;
+    margin-bottom: 25px;
+    margin-top: 25px;
     font-style: italic;
-    /* height: 20vh; */
     color: var(--light-color);
     opacity: 1;
     font-size: 60px;
     z-index: 1;
-    position: absolute;
-    background-color: #000;
-    padding: 15px;
-
 }
+
+.card {    
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    z-index: 10;
+}
+
+.grid {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    z-index: 10;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    margin: 0;
+}
+
+.gridJob {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 2fr 7fr ;
+    margin: 0;
+}
+
+.gridJob > *:nth-child(3) {
+    grid-column: 1 / span 2;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
 
 button {
     border: none;
@@ -98,22 +151,6 @@ button {
     font-style: italic;
 }
 
-
-
-.section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-    /* z-index: -1; */
-    width: calc(100% - var(--nav-width));  
-    height: 100vh;
-    top: 0;
-    left: var(--nav-width);
-    color: var(--light-color);
-}
-
 .section-2 {
     height: auto;
 }
@@ -127,39 +164,30 @@ button {
     background-size: cover;
     z-index: 0;
     overflow: hidden;
-  }
-
-
+    position: absolute;
+}
 
 p {
-    position: absolute;
     background: var(--dark-color);
-    width: 90%;
-
+    z-index: 10;
+    text-align: center;
+    color: var(--light-color);
 }
 
 form {
     z-index: 100;
 }
 
-.jobs {
-    position: absolute;
-    /* top: 10%; */
-}
-
 .job {
-    width: 50vw;
-    margin: 20px;
+    width: 60vw;
+    margin: 20px 0;
     background-color: grey;
     border: 1px solid var(--light-color);
-    padding: 20px;
-    align-items: center;
-    /* justify-content: center; */
-    justify-self: center;
 }
 
 .job p {
-    position: relative;
+    background-color: grey;
+    margin: 0 5px;
 }
 
 

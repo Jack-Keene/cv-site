@@ -1,8 +1,7 @@
 import React from 'react';
-import Typical from 'react-typical';
 
 import Background from '../images/lights.png';
-import Section from './Section';
+import Section2 from './Section2';
 import '../index.css'
 
 function About() {
@@ -11,17 +10,11 @@ function About() {
     
     return (
         <div id='aboutContainer'>
-            <Section
+            <Section2
+                size="section"
                 background= {Background}
                 header = "About Me"
-                content = {about}
-                size="section">
-                <p>
-                    <Typical
-                        steps={[about, 10]}
-                        loop= {1}/> 
-                </p>
-            </Section>
+                content = {about} />
         </div>
     )
 };
