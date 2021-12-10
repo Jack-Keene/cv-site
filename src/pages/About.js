@@ -6,15 +6,15 @@ import '../index.css'
 
 function About() {
     let about = "In November 2021 I left my career in the Automotive industry to focus full time on software development. ";
-    
-    
+
+
     return (
         <div id='aboutContainer'>
             <Section2
                 size="section"
                 background= {Background}
                 header = "About Me"
-                content = {about} />
+                content=  {about} />
         </div>
     )
 };

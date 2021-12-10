@@ -8,14 +8,17 @@ function Job(props) {
     if(props.direction === 'right') {
         bounce = <Bounce right cascade>
                     <li>
-                        <div className="job"> 
+                    <div className="job grid gridJob"> 
                             <h2>{props.job}</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Commodi dolorum animi nemo sequi ipsum at incidunt numquam. 
-                                 Adipisci, aperiam ipsa aut consequatur deserunt vero enim 
-                                 doloribus libero omnis atque praesentium
-                            </p>
+                            <h2>Company</h2>
+                            <h3>August 2017 - present</h3>
+                            
+                            <p>{props.children}</p>
+                            <ul>
+                                <li>Python</li>
+                                <li>Python</li>
+                                <li>Python</li>
+                            </ul>
                         </div>   
                     </li>
                 </Bounce>        
@@ -29,12 +32,7 @@ function Job(props) {
                             <h2>Company</h2>
                             <h3>August 2017 - present</h3>
                             
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Commodi dolorum animi nemo sequi ipsum at incidunt numquam. 
-                                 Adipisci, aperiam ipsa aut consequatur deserunt vero enim 
-                                 doloribus libero omnis atque praesentium
-                            </p>
+                            <p>{props.children}</p>
                             <ul>
                                 <li>Python</li>
                                 <li>Python</li>

@@ -9,10 +9,30 @@ function Experience() {
             <Section2
             header={"Experience"}
             size="section section-2">
-                <Job direction="left"  job="Job 1" />
-                <Job direction="right" job="Job 1" />
-                <Job direction="left"  job="Job 1" />
-                <Job direction="right" job="Job 1" />
+                <Job direction="left"  job="Nissan" > 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi dolorum animi nemo sequi ipsum at incidunt numquam. 
+                        Adipisci, aperiam ipsa aut consequatur deserunt vero enim 
+                        doloribus libero omnis atque praesentium                         
+                </Job>
+                <Job direction="right" job="Nissan" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi dolorum animi nemo sequi ipsum at incidunt numquam. 
+                        Adipisci, aperiam ipsa aut consequatur deserunt vero enim 
+                        doloribus libero omnis atque praesentium                         
+                </Job>
+                <Job direction="left"  job="CofE" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi dolorum animi nemo sequi ipsum at incidunt numquam. 
+                        Adipisci, aperiam ipsa aut consequatur deserunt vero enim 
+                        doloribus libero omnis atque praesentium                         
+                </Job>
+                <Job direction="right" job="Job 1" >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi dolorum animi nemo sequi ipsum at incidunt numquam. 
+                        Adipisci, aperiam ipsa aut consequatur deserunt vero enim 
+                        doloribus libero omnis atque praesentium                         
+                </Job>
             </Section2>            
         </div>
     );
