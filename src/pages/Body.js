@@ -6,11 +6,13 @@ import Contact from './Contact';
 import Nav from '../navigation/Nav';
 
 import '../index.css'
+import Landing from './Landing';
 
 function Body() {
     return (
         <main>
             <Nav />
+            <Landing />
             <About />
             <Experience />
             <Projects />

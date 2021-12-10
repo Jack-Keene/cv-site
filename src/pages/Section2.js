@@ -19,12 +19,13 @@ function Section2(props) {
     return (
         <div className={props.size}>
             {background}
-            <div className="grid">
-                <h1>{header}</h1>
-                <p>{props.content}</p>
-                <ul> 
-                    {props.children}
-                </ul>                
+            <div className={props.grid}>
+                {header}
+                {props.content}
+                {/* <ul>  */}
+                
+                {props.children}
+                {/* </ul>                 */}
 
             </div>
         </div>

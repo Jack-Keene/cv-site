@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,800;1,800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,800;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,800;1,800&family=Lato&display=swap');
 
 * {
     margin: 0;
@@ -16,48 +17,56 @@
 :root {
     /* --nav-size: 60px; */
     --dark-color: #000;
+    --medium-color: #16212c;
     --light-color: #fff;
     --nav-width: min(25vw, 200px);
+}
 
+a {
+    color: var(--light-color);
+    text-decoration: none;
 }
 
 .section {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: grey;
+    background-color: var(--dark-color);
     width: calc(100% - var(--nav-width));  
     height: 100vh;
     top: 0;
     left: var(--nav-width);
     color: var(--light-color);
+
 }
 
 .landing {
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-color);
-    width: 100vw;  
-    height: 100vh;
-    top: 0;
-    color: var(--light-color);
+    /* align-items: center; */
+    width: 100vw;
+    justify-content: space-around;   
+    display: grid;
+    /* flex-direction: column; */
+}
+.section .grid .landing {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-
+.grid .landing .section .logos {
+    justify-content: space-around;
+}
 
 h1 {
     text-align: center;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    line-height: 2.5;
+    padding: 0 25px;
     font-style: italic;
     color: var(--light-color);
     opacity: 1;
     font-size: 60px;
     z-index: 1;
+    /* background-color: #000; */
+    display: inline;
 }
 
 .card {    
@@ -67,25 +76,31 @@ h1 {
     z-index: 10;
 }
 
-.grid {
+.grid-center {
     display: grid;
+    /* height: auto; */
+    align-items: center;
+}
+
+.grid {
     text-align: center;
     align-items: center;
     justify-content: center;
     justify-self: center;
     z-index: 10;
     grid-template-columns: repeat(1, 1fr);
-    height: auto;
     margin: 0;
 }
 
 .gridJob {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr 2fr 7fr ;
     margin: 0;
 }
 
 .gridProjects {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2fr 3fr 3fr ;
     margin: 0;
@@ -98,12 +113,11 @@ h1 {
 
 .flex {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     height: 100%;
+
 }
-
-
 
 button {
     border: none;
@@ -126,6 +140,7 @@ body {
     width: var(--nav-width);
     position: fixed;
     left: 0;
+    /* top: 100vh; */
     z-index: 50;
     height: 100vh;
     background: var(--dark-color);
@@ -158,13 +173,13 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  z-index: 100;
 }
   
 .sidenav li {
     font-size: 25px;
     color: var(--light-color);
     text-decoration: none;
-    
 }
 
 button {
@@ -176,7 +191,11 @@ button {
 .section-2 {
     height: auto;
 }
-  
+
+.bg h1 {
+    background-color: #000;
+}
+
 .bg {
     width: 100%;
     height: 100%;
@@ -191,9 +210,15 @@ button {
 
 p {
     background: var(--dark-color);
+    padding: 10px 0;
+    font-size: 25px;
     z-index: 10;
     text-align: center;
     color: var(--light-color);
+    margin: 10px;
+    /* font-family: 'Lato', sans-serif; */
+    line-height: 35px;
+
 }
 
 form {
@@ -203,13 +228,15 @@ form {
 .job {
     width: 60vw;
     margin: 20px 0;
-    background-color: grey;
+    background-color: var(--medium-color);
     border: 1px solid var(--light-color);
 }
 
 .job p {
-    background-color: grey;
+    background-color: var(--medium-color);
     margin: 0 5px;
+    line-height: 25px;
+    font-size: medium;
 }
 
 

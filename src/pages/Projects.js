@@ -10,7 +10,8 @@ function Projects() {
             <Section2
                 background={Background}
                 header="Projects"
-                size="section">
+                size="section"
+                grid="grid">
                     <div className=" gridProjects grid">
                         <Project> Project 1</Project>
                         <Project> Project 2 </Project>
