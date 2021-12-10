@@ -1,17 +1,21 @@
 import React from 'react';
 import Typical from 'react-typical';
 
-import Background from '../images/lights.jpg';
+import Background from '../images/lights.png';
 import Section from './Section';
 import '../index.css'
 
 function About() {
-    let about = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis eos esse illo, est, labore ex voluptatibus molestias repudiandae porro deserunt vel pariatur! Ut, voluptates totam architecto, ullam fugit eius at nobis tempore unde reprehenderit repellat doloribus voluptatem, porro repudiandae ipsam soluta ex delectus neque sapiente aperiam molestias deserunt veritatis.";
+    let about = "In November 2021 I left my career in the Automotive industry to focus full time on software development. ";
+    
+    
     return (
         <div id='aboutContainer'>
             <Section
                 background= {Background}
-                header = "About Me">
+                header = "About Me"
+                content = {about}
+                size="section">
                 <p>
                     <Typical
                         steps={[about, 10]}

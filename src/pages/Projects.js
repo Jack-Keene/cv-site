@@ -1,14 +1,15 @@
 import React from 'react';
 import '../index.css'
-import Background from '../images/chimney.jpg';
+import Background from '../images/chimney.png';
+import Section from './Section';
 
 function Projects() {
     return (
         <div id="projectsContainer">
-            <div className='section'>
-                <img className="bg" src={Background} alt="Background" />
-                <h1> Projects</h1>
-            </div>
+            <Section 
+                background={Background}
+                header="Projects"
+                size="section"/>
         </div>
     );
 };
