@@ -4,7 +4,6 @@ import Projects from './Projects';
 import Experience from './Experience';
 import Contact from './Contact';
 import Nav from '../navigation/Nav';
-import Landing from './Landing'
 
 import '../index.css'
 

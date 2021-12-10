@@ -3,7 +3,7 @@ import '../index.css'
 
 function Project(props) {
     return (
-        <div className="card">
+        <div className="project">
             {props.children}
         </div>
                    
