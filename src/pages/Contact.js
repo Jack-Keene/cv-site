@@ -15,7 +15,7 @@ function Contact() {
                 <input autoComplete="off" type="text" id="name" name="name" required placeholder="NAME" />
                 <input autoComplete="off" type="email" id="email" name="email" required placeholder="EMAIL"/>
                 <textarea autoComplete="off" type="textarea" id="message" name="message" required placeholder="MESSAGE"/>
-                <button className="form"type="submit">Send</button>
+                <button type="submit">Send</button>
             </form>
         </section>
     );
