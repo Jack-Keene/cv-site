@@ -9,7 +9,7 @@ function Landing() {
     
     return (       
         <section className="section landing">
-            <Background style="background brightness" image={Image} />
+            <Background className={"background brightness"} image={Image} />
             <div>
                 <h1>JACK KEENE</h1>
                 <h3>SOFTWARE DEVELOPER</h3>

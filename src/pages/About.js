@@ -1,20 +1,15 @@
 import React from 'react';
 import '../index.css';
 
-import Image from "../images/lightbulb.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrosshairs } from '@fortawesome/free-solid-svg-icons';
-import Background from '../components/Background';
 import Rotate from '../components/Rotate';
 
 
 function About() {
-    // useState here to recrd which section is active
-    var style= "background grayscale";
-    
+    // useState here to recrd which section is active  
     return (       
         <section id="about" className="section about">
-            {/* <Background style={style} image={Image}/> */}
             <Rotate text="ABOUT ME"/>
            
             <FontAwesomeIcon className="svg-1" icon={faCrosshairs} size="2x" />

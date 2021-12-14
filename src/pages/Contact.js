@@ -8,7 +8,7 @@ function Contact() {
   
     return (       
         <section className="section contact" id="contact" >
-            <Background style="background brightness" image={Image}/>
+            <Background style={{style: "background brightness"}} image={Image}/>
             <h1 className="header"> Contact</h1>
             <div className="form">
                 <input autoComplete="off" type="text" id="name" name="name" required placeholder="NAME"/>

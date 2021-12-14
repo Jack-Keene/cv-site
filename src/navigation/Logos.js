@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faGooglePlus, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faGooglePlus, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from  '@fortawesome/free-solid-svg-icons';
 
 function Logos() {

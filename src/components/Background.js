@@ -3,7 +3,7 @@ import '../index.css';
 
 function Background(props) {
     return (       
-        <img className={props.style} src={props.image} alt="Background" />
+        <img className={props.className} src={props.image} alt="Background" />
     );
 }
 
