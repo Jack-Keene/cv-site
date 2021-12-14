@@ -10,7 +10,7 @@ function Contact() {
         <section className="section contact" id="contact" >
             <Background className={"background brightness"} image={Image}/>
             <h1 className="header"> Contact</h1>
-            <form className="form" name="contact" method="POST" data-netlify="true">
+            <form className="form" name="contact" method="POST" data-netlify="true" netlify>
                 <input autoComplete="off" type="text" id="name" name="name" required placeholder="NAME"/>
                 <input autoComplete="off" type="email" id="email" name="email" required placeholder="EMAIL"/>
                 <textarea autoComplete="off" type="textarea" id="message" name="message" required placeholder="MESSAGE"/>
