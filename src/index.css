@@ -25,9 +25,7 @@
     width: 100vw;
     max-width: 100%;
     min-height: calc(100vh - var(--nav-height));
-    /* min-height: 100vh ; */
 }
-
 
 button {
     background-color: transparent;
@@ -71,16 +69,7 @@ a {
     }
   }
 
-  #stage {
-    margin: 1em auto;
-    /* -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
-    -ms-perspective: 1200px;
-    perspective: 1200px; */
-  }
-
-
-  #spinner {
+#spinner {
     -webkit-animation-name: spinner;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -101,14 +90,13 @@ a {
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
-      /* height: 100%; */
       position: relative;
       grid-column: 1 / span 4;
       background-color: #000;
       z-index: 1;
   }
-/* Navigation */
 
+/* Navigation */
 .nav {
     width: 100vw;
     background: var(--dark-color);
@@ -148,27 +136,12 @@ a {
     fill: var(--light-color);
 }
 
-/* .background {
-    height: 100%; 
-  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-} */
-
-
 .background {
-    /* background-size: 100% auto; */
     background-attachment: fixed;
     background-position: center;
-
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-    /* height: 100%;
-    width: 100%; */
     position: absolute;
     z-index: -100;
 }
@@ -230,6 +203,7 @@ a {
     grid-row: 2 / span 1;
     justify-self: end;
     align-self: end;
+    /* font-size: 25px; */
 }
 
 .about path {
@@ -280,6 +254,13 @@ a {
 .experience h1 {
     font-family: 'Playfair Display', serif;
     font-size: 100px;
+}
+
+.experience h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 /* Job */
@@ -359,15 +340,26 @@ a {
 }
 
 .project .p-1 {
-    grid-column: 2 / span 1 ;
+    grid-column: 1 / span 1 ;
     grid-row: 3 / span 1 ;
     color: #b2b2b2;
 }
+
+.project .p-3 {
+    grid-column: 1 / span 1 ;
+    grid-row: 2 / span 1 ;
+    color: #b2b2b2;
+}
+
 .project .p-2 {
     grid-column: 3 / span 1;
     color: #b2b2b2;
     align-self: start;
     font-style: normal;
+}
+
+.p-2 li {
+    color: #b2b2b2;
 }
 
 .projects .project h2 {
@@ -398,7 +390,6 @@ a {
 }
 .project:hover img {
     filter: none;
-    
 }
 
 .project img {

@@ -15,14 +15,16 @@ function About() {
             <FontAwesomeIcon className="svg-1" icon={faCrosshairs} size="2x" />
             <h2>about me.</h2>
                 
-            <p className="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a type specimen book. 
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+            <p className="p-1">
+                Since graduating university in 2017, I have worked for Nissan Motors GB as an analyst
+                and more recently as a performance and operations manager. I began learning Python in
+                order to be more efficient in my work and I've not stopped developing my programming 
+                skills since. 
             </p>
-            <p className="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                has been the industry's standard dummy text ever since the 1500s. 
-
+            <p className="p-2">
+                In November 2021 I left the automotive industry to pursue software development 
+                full time and I'm currently looking for my first full time role. Feel free to 
+                get in contact with me directly, or through the form on this site.
             </p>
         </section>
     );

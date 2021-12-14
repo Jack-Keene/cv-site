@@ -8,8 +8,7 @@ function Job(props) {
         <div className="job">
             <h3>{props.jobTitle}</h3>
             <h3>{props.year}</h3>
-            <p>{props.children}
-            </p>
+            <p>{props.children}</p>
         </div>
     );
 }
