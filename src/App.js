@@ -2,11 +2,11 @@ import React from 'react';
 import './index.css';
 import Navbar from './navigation/Navbar';
 import About from './pages/About';
-import Experience from './pages/Experience';
 import Landing from './pages/Landing'
-import Projects from './pages/Projects';
+import Projects from './pages/ProjectsUpdate';
 import Contact from './pages/Contact';
 import Logos from './navigation/Logos';
+import ExperienceUpdate from './pages/ExperienceUpdate';
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
             <Logos />
             <Landing />
             <About  />
-            <Experience />
+            <ExperienceUpdate />
             <Projects />
             <Contact />
         </div>            

@@ -4,13 +4,16 @@ import '../index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import NavLink from './Navlink';
+// import { useState } from 'react';
+// import { NavLink } from 'react-router-dom'
+
 
 function Navbar() {
     // useState here to record which section is active
-        
+     
     return (       
         <nav className="nav">
-            <NavLink title="About" scrollToId={"about"} />
+            <NavLink title="About" scrollToId={"about"}/>
             <NavLink title="Experience" scrollToId={"experience"}/>
             <NavLink title={<FontAwesomeIcon icon={faAngleDown} size="2x" />} scrollToId={"about"}/>
             <NavLink title="Projects" scrollToId={"projects"}/>

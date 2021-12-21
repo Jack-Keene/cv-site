@@ -9,7 +9,7 @@ function Contact() {
     return (       
         <section className="section contact" id="contact" >
             <Background className={"background brightness"} image={Image}/>
-            <h1 className="header"> Contact</h1>
+            <h1 className="header"> <span className='circle'></span>Contact</h1>
             <form className="form" name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <input autoComplete="off" type="text" id="name" name="name" required placeholder="NAME" />

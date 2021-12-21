@@ -3,8 +3,7 @@ import '../index.css';
 
 function NavLink(props) {
     // useState here to set active which section is active
-    const handleClick = () => {
-        console.log(props.scrollToId);
+    const handleClick = (i) => {
         document.getElementById(props.scrollToId).scrollIntoView({
             behavior: 'smooth',}
         );
@@ -12,7 +11,8 @@ function NavLink(props) {
     return (       
         <button
             href={props.scrollToId}
-            onClick={handleClick}>
+            onClick={handleClick}
+            className={props.className}>
                 {props.title}
         </button>
 
