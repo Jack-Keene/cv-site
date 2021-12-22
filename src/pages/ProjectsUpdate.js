@@ -48,7 +48,7 @@ function App() {
             position: "left"
         },
         {
-            number: "02",
+            number: "02.",
             code: "autoview",
             name: "AutoView",
             image: AV,
