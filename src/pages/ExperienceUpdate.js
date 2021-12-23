@@ -51,7 +51,7 @@ function ExperienceUpdate() {
                 year: 'Aug 2019 - Oct 2021',
                 jobDescription: 
                 <ul>
-                    <li>Responsible for reporting and automation across Aftersales department using Python and SQL.</li> 
+                    <li>Responsible for reporting and automation across the Aftersales department using Python and SQL.</li> 
                     <li>Accountable for aftersales and service departments for all Nissan franchise dealerships in Northern Ireland.</li>
                 </ul>
               },
@@ -61,7 +61,7 @@ function ExperienceUpdate() {
                 jobDescription: 
                 <ul>
                     <li>Coordinated a project to bring all business scorecards in-house, using my methodology cutting agency costs by £24k per year.</li> 
-                    <li>Designed and project managed online performance tracker to improve engagement in rewards programme for franchise dealer partners.</li>
+                    <li>Designed and project managed an online performance tracker to improve engagement in the rewards programme for franchise dealer partners.</li>
                 </ul>
               }]
         },
@@ -76,7 +76,7 @@ function ExperienceUpdate() {
                 jobDescription: 
                 <ul>
                     <li>Collated and analysed internal and government published data to identify key focus areas for the Church of England's funding streams.</li> 
-                    <li>Analysed local attendance figures, financial information, census data (deprivation, age profiles, demographics etc) from local areas to produce 'strategic context' presentations for non-technical stakeholders.</li>
+                    <li>Analysed local attendance figures, financial information, census data (deprivation, age profiles, demographics) from areas to produce 'strategic context' presentations for non-technical stakeholders.</li>
                 </ul>
               },
         ]},
@@ -89,7 +89,7 @@ function ExperienceUpdate() {
                 year: 'Jul 2016 - May 2017',
                 jobDescription: 
                 <ul>
-                    <li>Responsible for checking and correcting missing, and incorrect data in a live database. Produced reports for analysis by management using SQL.</li> 
+                    <li>Responsible for checking and correcting missing and incorrect data in a live database. Produced reports for analysis by management using SQL.</li> 
                 </ul>
               },
         ]},
@@ -102,9 +102,9 @@ function ExperienceUpdate() {
                 year: 'Aug 2019 - Oct 2021',
                 jobDescription:
                 <ul>
-                    <li>Provided analysis to support policy makers in public health improvement department. </li> 
+                    <li>Provided analysis to support policy makers in the public health improvement department. </li> 
                     <li>Led a research project on occupational health provision in the workplace, liaising with key stakeholders to determine policy recommendations.</li>
-                    <li>Carried out project looking at how deprivation affected the likelihood of people to have certain medical procedures and presented findings at the monthly meeting of all (approx. 150) DoH analysts.</li>
+                    <li>Carried out a project looking at how deprivation affects the likelihood of someone needing a medical procedure and presented findings at the monthly meeting of all (approx. 150) DoH analysts.</li>
                 </ul>
               },
         ]}

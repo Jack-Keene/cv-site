@@ -259,8 +259,26 @@ a {
     align-self: end;
 }
 
-.about .skills {
-    grid-row: 4 / span 1;
+.skills {
+    display: grid;
+}
+
+.about .skills .skills-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about .skills h2 {
+    justify-self: center;
+    grid-column: 1 / span 1;
+    align-self: end;
+    text-align: center;
+
+}
+
+.skills-list li::marker  {
+    content: none;
 }
 
 /* Experience */
@@ -763,17 +781,20 @@ textarea {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         filter: none !important; 
+        text-align: center ;
+        /* grid-column: 1 / span 13; */
     }
 
-    .info {
-        text-align: center ;
-        grid-column: 1 / span 13;
+    .info h2 {
+        font-weight: normal;
+        
     }
 
     .info p {
         background-color: transparent !important;
         font-size: 16px;
         text-align: center;
+        margin-top: 10px;
     }
     
     .project-left .info, .project-right .info {
@@ -799,6 +820,11 @@ textarea {
     .contact {
         grid-template-columns: auto;
     }
+
+    .contact .header {
+        font-size: 90px;
+    }
+    
 
     .contact .header, .contact .form {
         grid-column: 1 / span 2;

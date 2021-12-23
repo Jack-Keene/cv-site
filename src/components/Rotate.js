@@ -8,15 +8,15 @@ function Rotate(props) {
         <div className="rotate-box"> 
             <div className= "header-rotate" > 
                 <div  className="header" id="spinner">
-                <h1 className=" header-hollow">{props.text}</h1>&nbsp;
-                <h1 className=" header-solid">{props.text} </h1> &nbsp;
-                <h1 className=" header-hollow">{props.text} </h1>&nbsp;
-                <h1 className=" header-solid">{props.text} </h1>&nbsp;
-                <h1 className=" header-hollow">{props.text} </h1>&nbsp;
-                <h1 className=" header-solid">{props.text} </h1>&nbsp;
-                <h1 className=" header-hollow">{props.text} </h1>&nbsp;
-                <h1 className=" header-solid">{props.text} </h1>&nbsp;
-                <h1 className=" header-hollow">{props.text} </h1>&nbsp;
+                    <h1 className=" header-hollow">{props.text}</h1>&nbsp;
+                    <h1 className=" header-solid">{props.text} </h1> &nbsp;
+                    <h1 className=" header-hollow">{props.text} </h1>&nbsp;
+                    <h1 className=" header-solid">{props.text} </h1>&nbsp;
+                    <h1 className=" header-hollow">{props.text} </h1>&nbsp;
+                    <h1 className=" header-solid">{props.text} </h1>&nbsp;
+                    <h1 className=" header-hollow">{props.text} </h1>&nbsp;
+                    <h1 className=" header-solid">{props.text} </h1>&nbsp;
+                    <h1 className=" header-hollow">{props.text} </h1>&nbsp;
                 </div>
             </div>
         </div>         

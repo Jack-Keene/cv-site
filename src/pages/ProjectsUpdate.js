@@ -44,7 +44,7 @@ function App() {
             tech: "Python Flask HTML CSS",
             github: "/",
             link: "https://mates-lads-fc.herokuapp.com",
-            description: "Website designed and built for local football team with Flask and Postgres and hosted on Heroku. The site allows users to track fixtures and results, individual player stats and a league table.",
+            description: "This website was designed and built for a local football team using Flask and Postgres and hosted on Heroku. The site allows users to track fixtures and results, individual player stats and shows a league table.",
             position: "left"
         },
         {
@@ -56,7 +56,7 @@ function App() {
             tech: "Python Flask HTML CSS",
             github: "/",
             link: "https://autoview.herokuapp.com/",
-            description: "A dealer management system built with Flask, Postgres and Bootstrap with three levels of user access each providing a different user experience including:",
+            description: "AutoView is a dealer management system built using Fl ask, Postgres and Bootstrap. There are three levels of user access providing a different experience for customers, dealers and manufacturers.",
             position: "right"
         }
 
