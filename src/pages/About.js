@@ -17,7 +17,7 @@ function About() {
                     Since graduating from university in 2017, I have worked for Nissan Motors GB as an analyst and more recently as a performance and operations manager. I began learning Python to be more efficient in my work and I've not stopped developing my programming skills since.                
                 </p>
                 <p className="p-2">
-                    In November 2021 I left the automotive industry to pursue software development full time and I'm currently looking for my first full-time role. Feel free to contact me directly or through the form on this site.
+                    In November 2021 I left the automotive industry to pursue software development full time and I'm currently looking for a new role. Feel free to contact me directly or through the form on this site.
                 </p>
             </div>
             

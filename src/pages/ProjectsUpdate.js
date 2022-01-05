@@ -53,10 +53,10 @@ function App() {
             name: "AutoView",
             image: AV,
             gif: AV,
-            tech: "Python Flask HTML CSS",
+            tech: "Python Flask HTML Bootstrap",
             github: "/",
             link: "https://autoview.herokuapp.com/",
-            description: "AutoView is a dealer management system built using Fl ask, Postgres and Bootstrap. There are three levels of user access providing a different experience for customers, dealers and manufacturers.",
+            description: "AutoView is a dealer management system built using Flask, Postgres and Bootstrap. There are three levels of user access providing a different experience for customers, dealers and manufacturers.",
             position: "right"
         }
 
