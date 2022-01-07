@@ -44,7 +44,7 @@ function App() {
             image: Mates,
             gif: MatesGif,
             tech: "Python Flask PostgreSQL HTML CSS",
-            github: "/",
+            github: "https://github.com/Jack-Keene/thursday-football",
             link: "https://mates-lads-fc.herokuapp.com",
             description: "This website was designed and built for a local football team using Flask and Postgres and hosted on Heroku. The site allows users to track fixtures and results, individual player stats and shows a league table.",
             position: "left"
@@ -56,7 +56,7 @@ function App() {
             image: AV,
             gif: AV,
             tech: "Python Flask PostgreSQL HTML Bootstrap",
-            github: "/",
+            github: "https://github.com/Jack-Keene/autoview-v1",
             link: "https://autoview.herokuapp.com/",
             description: "AutoView is a dealer management system built using Flask, Postgres and Bootstrap. There are three levels of user access providing a different experience for customers, dealers and manufacturers.",
             position: "right"
@@ -68,7 +68,7 @@ function App() {
             image: Portfolio,
             gif: PortfolioGif,
             tech: "React.js HTML CSS",
-            github: "/",
+            github: "https://github.com/Jack-Keene/cv-site-v2",
             link: "https://jackkeene.com/",
             description: "Personal website built in React.js",
             position: "left"
