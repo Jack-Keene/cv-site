@@ -1,7 +1,9 @@
 import React from 'react';
 import '../index.css'
 import MatesGif from '../images/mates-lads-gif.gif'
+import PortfolioGif from '../images/portfolio-gif.gif'
 import Mates from '../images/mates.png'
+import Portfolio from '../images/portfolio.png'
 import AV from '../images/av.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -58,6 +60,18 @@ function App() {
             link: "https://autoview.herokuapp.com/",
             description: "AutoView is a dealer management system built using Flask, Postgres and Bootstrap. There are three levels of user access providing a different experience for customers, dealers and manufacturers.",
             position: "right"
+        },
+        {
+            number: "03.",
+            code: "portfolio",
+            name: "Portfolio Website",
+            image: Portfolio,
+            gif: PortfolioGif,
+            tech: "React.js HTML CSS",
+            github: "/",
+            link: "https://jackkeene.com/",
+            description: "Personal website built in React.js",
+            position: "left"
         }
 
     ]
