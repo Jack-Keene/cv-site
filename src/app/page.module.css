@@ -8,6 +8,25 @@
   overflow: hidden;
 }
 
+.body::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x)
+  );
+}
+
+.backgroundTextured {
+  background-color: #3b3c36;
+  opacity: 0.8;
+  background-image:  
+  linear-gradient(30deg, #353631 12%, transparent 12.5%, transparent 87%, #353631 87.5%, #353631), 
+  linear-gradient(150deg, #353631 12%, transparent 12.5%, transparent 87%, #353631 87.5%, #353631), 
+  linear-gradient(30deg, #353631 12%, transparent 12.5%, transparent 87%, #353631 87.5%, #353631), 
+  linear-gradient(150deg, #353631 12%, transparent 12.5%, transparent 87%, #353631 87.5%, #353631),
+  linear-gradient(60deg, #35363177 25%, transparent 25.5%, transparent 75%, #35363177 75%, #35363177), 
+  linear-gradient(60deg, #35363177 25%, transparent 25.5%, transparent 75%, #35363177 75%, #35363177);
+  background-size: 76px 133px;
+  background-position: 0 0, 0 0, 38px 67px, 38px 67px, 0 0, 38px 67px;}
+
 .description {
   display: inherit;
   justify-content: inherit;

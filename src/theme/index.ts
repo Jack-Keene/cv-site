@@ -495,10 +495,13 @@ export const muiTheme: ThemeOptions = {
                 root: {
                     backgroundColor: theme.color.primary["600"],
                     color: theme.color.primary['500'],
+                },
+                label: {
+                    fontSize: "1.2rem",
+                    fontWeight: "bold"
                 }
             }
         },
-
         MuiButtonBase: {
             defaultProps: { disableRipple: true },
         },

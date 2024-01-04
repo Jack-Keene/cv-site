@@ -14,10 +14,9 @@ const theme = createTheme(muiTheme);
 // const rubik = Rubik({ subsets: ["latin"] });
 
 export default function Home() {
-
   return (
     <ThemeProvider theme={theme}>
-      <body className={styles.body}>
+      <body className={ `${styles.body} ${styles.backgroundTextured}` }>
       <Navbar />
       <LandingPage />
       <CssBaseline />

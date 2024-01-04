@@ -5,8 +5,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import plant from './plant.jpg'
 import Image from 'next/image'
 import { faCss3, faDocker, faHtml5, faJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-import { BottomNavigation, BottomNavigationAction, Box, Card, CardContent, CssBaseline, Typography } from "@mui/material";
-import CardCover from '@mui/joy/CardCover';
+import { BottomNavigation, BottomNavigationAction, CssBaseline, } from "@mui/material";
 
 export default function LandingPage() {
     const [value, setValue] = React.useState('recents');
@@ -15,29 +14,11 @@ export default function LandingPage() {
         setValue(newValue);
     };
     return (
-        <main className={styles.main}>
-            <div className={styles.content}>
-
-                <div className={styles.section}>
-                    {/* <Box
-                        component="ul"
-                        sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', p: 0, m: 0 }}
-                    >
-                        <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
-                            <CardCover>
-                                <img
-                                    src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
-                                    srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
-                                    loading="lazy"
-                                    alt=""
-                                />
-                            </CardCover>
-                        </Card>
-
-                    </Box> */}
-                    <Image src={plant} alt="tree" placeholder="blur" />
+        <main className={`${styles.main} ${styles.backgroundTextured}`}>
+            <div className={`${styles.content} `}>
+                <div className={`${styles.section} ${styles.backgroundTextured}`}>
                     <p>
-                        Welcome! I'm Jack Keene, a full-stack software engineer with at <a className={styles.link} href="https://snowplow.io/" target="_blank">Snowplow.io</a>. Specializing in Python, React, and TypeScript,
+                        Welcome! I'm Jack Keene, a full-stack software engineer at <a className={styles.link} href="https://snowplow.io/" target="_blank">Snowplow.io</a>. Specializing in Python, React, and TypeScript,
                         I thrive on developing dynamic and efficient solutions for complex challenges.
                     </p>
                     <p>
@@ -61,15 +42,15 @@ export default function LandingPage() {
 
             <BottomNavigation showLabels value={value} onChange={handleChange}>
                 <BottomNavigationAction
-                    label="Recents"
+                    label="About"
                 />
                 <BottomNavigationAction
-                    label="Favorites"
+                    label="Experience"
                 />
                 <BottomNavigationAction
-                    label="Nearby"
+                    label="Projects"
                 />
-                <BottomNavigationAction label="Folder" />
+                <BottomNavigationAction label="Contact" />
             </BottomNavigation>
         </main>)
 }
