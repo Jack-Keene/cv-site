@@ -18,7 +18,6 @@ export default function SpotifyWidget() {
   const { data, isLoading } = useNowPlaying()
   const [loading, setLoading] = useState(true)
   const [open, setOpen] = useState(false)
-  const [pallete, setPallete] = useState(null)
 
   useEffect(() => {
     setLoading(isLoading)
@@ -46,7 +45,7 @@ export default function SpotifyWidget() {
   return (
     <div>
       <canvas className={styles.canvas} id='canvas' ></canvas>
-      <Collapse className={styles.absolute} collapsedSize={80} orientation="horizontal" in={open} style={{ opacity: opacity, display: display, transition: '1s'}}>
+      <Collapse className={styles.absolute} collapsedSize={80} orientation="horizontal" in={open} style={{ opacity: opacity, display: display, transition: '1s' }}>
         <div className={`${styles.spotify} ${styles.spotifyWidget}`} onClick={() => setOpen(!open)}>
           <img id='imgfile' className={styles.albumImage} src={albumImageUrl} onLoad={getPalleteColors} />
           <div className={styles.songInfo}>
@@ -57,7 +56,7 @@ export default function SpotifyWidget() {
           <FontAwesomeIcon className={styles.logo} icon={faSpotify as IconProp} />
         </div >
       </Collapse>
-      <div className={styles.absolute} style={{ opacity: logoOpacity, display: logoDisplay,  transition: '0.5s'}}>
+      <div className={styles.absolute} style={{ opacity: logoOpacity, display: logoDisplay, transition: '1s' }}>
         <img id='imgfile' className={styles.albumImageClosed} src={albumImageUrl} onLoad={getPalleteColors} />
         <div className={`${styles.spotify} ${styles.spotifyClosed}`} onClick={() => setOpen(!open)}>
           <FontAwesomeIcon className={`${styles.closed}`} icon={faSpotify as IconProp} />
