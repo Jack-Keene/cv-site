@@ -19,19 +19,20 @@
     "@mui/joy": "^5.0.0-beta.21",
     "@mui/material": "^5.14.19",
     "next": "14.0.3",
+    "node": ">=18.17.0",
     "react": "^18",
     "react-dom": "^18",
-    "swr": "^2.2.4",
-    "node": ">=18.17.0"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "20.10.1",
     "@types/react": "18.2.39",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
-    "swr": "^2.2.4"
+    "swr": "^2.2.4",
+    "typescript": "^5.3.3"
   },
   "engines": {
-    "node": "18.17.0"
+    "node": ">=18.17.0"
   }
 }
