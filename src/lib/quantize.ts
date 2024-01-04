@@ -101,14 +101,14 @@ function setColor(newColors) {
         const hexColor = rgbToHex(newColors[i]);
         gradients.push(hexColor)
     }
-    document.documentElement.style.setProperty('--c1', gradients[0] + "90");
-    document.documentElement.style.setProperty('--c2', gradients[1] + "90");
-    document.documentElement.style.setProperty('--c3', gradients[2] + "90");
-    document.documentElement.style.setProperty('--c4', gradients[3] + "90");
-    document.documentElement.style.setProperty('--c5', gradients[4] + "90");
-    document.documentElement.style.setProperty('--c6', gradients[5] + "90");
-    document.documentElement.style.setProperty('--c7', gradients[6] + "90");
-    document.documentElement.style.setProperty('--c8', gradients[7] + "90");
+    document.documentElement.style.setProperty('--c1', gradients[0]) //+ "90");
+    document.documentElement.style.setProperty('--c2', gradients[1]) //+ "90");
+    document.documentElement.style.setProperty('--c3', gradients[2]) //+ "90");
+    document.documentElement.style.setProperty('--c4', gradients[3]) //+ "90");
+    document.documentElement.style.setProperty('--c5', gradients[4]) //+ "90");
+    document.documentElement.style.setProperty('--c6', gradients[5]) //+ "90");
+    document.documentElement.style.setProperty('--c7', gradients[6]) //+ "90");
+    document.documentElement.style.setProperty('--c8', gradients[7]) //+ "90");
 
 }
 

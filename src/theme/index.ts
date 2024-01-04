@@ -317,11 +317,11 @@ export const muiTheme: ThemeOptions = {
             contrastText: common.white,
         },
         background: {
-            default: "#3b3c36;",
+            default: theme.color.primary["600"],
             chip: theme.color.information["100"],
         },
         text: {
-            primary: "#FFF",
+            primary:theme.color.primary["500"]
         },
     },
     shadows: [
@@ -498,7 +498,7 @@ export const muiTheme: ThemeOptions = {
                 },
                 label: {
                     fontSize: "1.2rem",
-                    fontWeight: "bold"
+                    fontWeight: "bold",
                 }
             }
         },

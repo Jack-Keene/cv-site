@@ -16,9 +16,15 @@ nav .navSection {
 }
 
 #navSocials {
-    flex-basis: 50%;
-    justify-content: space-around;
+    flex-basis: 20%;
+    justify-content: flex-end;
     padding: 0;
+}
+#navSpotify {
+    flex-basis: 25%;
+    justify-content: flex-end;
+    color: #fff;
+
 }
 
 #navTitle {
@@ -27,6 +33,8 @@ nav .navSection {
     font-style: italic;
     flex-grow: 1;
     font-size: 48px;
+    color: #fff;
+
 }
 
 #navMenu {
@@ -36,7 +44,7 @@ nav .navSection {
 }
 
 .logo {
-    height: 35px;
-    width: 80px;
+    height: 25px;
+    width: 50px;
     border-radius: 40px;
 }

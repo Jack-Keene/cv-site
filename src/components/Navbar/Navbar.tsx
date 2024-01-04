@@ -14,6 +14,8 @@ export default function Navbar() {
             <div className={styles.navSection} id={styles.navSocials}>
                 <div><FontAwesomeIcon className={`${styles.logo} `} icon={faGithub as IconProp} /></div>
                 <div><FontAwesomeIcon className={`${styles.logo} `} icon={faLinkedinIn as IconProp} /></div>
+            </div>
+            <div className={styles.navSection} id={styles.navSpotify}>
                 <SpotifyWidget />
             </div>
             <div className={styles.navSection} id={styles.navMenu} >

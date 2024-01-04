@@ -28,6 +28,7 @@
     -moz-animation: AnimationName 38s ease infinite;
     animation: AnimationName 38s ease infinite;
     cursor: pointer;
+    color: #FFF;
 }
 
 .spotifyClosed {
@@ -98,6 +99,7 @@
 .logo {
     align-self: flex-start;
     justify-self: flex-end;
+    color: #FFF !important;
 }
 
 .nowPlaying {
