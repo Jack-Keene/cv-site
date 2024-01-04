@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 20px;
+    position: relative;
+}
+
+nav .navSection {
+    padding: 2rem 1rem;
+    display: flex;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#navSocials {
+    flex-basis: 50%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#navTitle {
+    flex-basis: 50%;
+    justify-content: center;
+    font-style: italic;
+    flex-grow: 1;
+    font-size: 48px;
+}
+
+#navMenu {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+}
+
+.logo {
+    height: 35px;
+    width: 80px;
+    border-radius: 40px;
+}
