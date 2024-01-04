@@ -1,4 +1,4 @@
-function buildRgb(imageData: string | any[]) {
+function buildRgb(imageData: Uint8ClampedArray) {
     const rgbValues = [];
     for (let i = 0; i < imageData.length; i += 4) {
         const rgb = {
@@ -114,7 +114,7 @@ function setColor(newColors) {
 
 export function getPalleteColors() {
     const imgFile = document.getElementById("imgfile");
-    if (imgFile) {
+    if (isImage(imgFile) ) {
         imgFile.crossOrigin = "Anonymous";
         const canvas = document.getElementById("canvas");
         var { width, height } = imgFile;
@@ -127,15 +127,29 @@ export function getPalleteColors() {
             height = 1
         }
 
-        const ctx = canvas.getContext("2d", { willReadFrequently: true });
-        ctx.drawImage(imgFile, 0, 0);
-        const imageData = ctx.getImageData(0, 0, width, height);
+        if (isCanvas(canvas)) {
+            const ctx = canvas.getContext("2d", { willReadFrequently: true });
+            ctx.drawImage(imgFile, 0, 0);
+            const imageData = ctx.getImageData(0, 0, width, height);
+    
+            const rgbValues = buildRgb(imageData.data)
+            const quantColors = quantization(rgbValues, 1);
+    
+            setColor(quantColors)
+        }
 
-        const rgbValues = buildRgb(imageData.data)
-        const quantColors = quantization(rgbValues, 1);
-
-        setColor(quantColors)
+        
     }
+
+    function isImage(obj: HTMLImageElement | HTMLElement): obj is HTMLImageElement {
+        return obj.tagName === 'IMG';
+    }
+
+    function isCanvas(obj: HTMLCanvasElement | HTMLElement): obj is HTMLCanvasElement {
+        return obj.tagName === 'CANVAS';
+    }
+    
+    
 
 
 

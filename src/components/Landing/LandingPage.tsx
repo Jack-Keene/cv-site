@@ -69,7 +69,7 @@ export default function LandingPage() {
                 <BottomNavigationAction
                     label="Nearby"
                 />
-                <BottomNavigationAction label="Folder" />} />
+                <BottomNavigationAction label="Folder" />
             </BottomNavigation>
         </main>)
 }
