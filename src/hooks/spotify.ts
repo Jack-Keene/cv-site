@@ -7,7 +7,7 @@ export function useNowPlaying() {
     const { data, error, isLoading } = useSWR(
         "/api/now-playing",
         fetcher,
-        { refreshInterval: 3000 }
+        { refreshInterval: 10000 }
     );
 
     return {

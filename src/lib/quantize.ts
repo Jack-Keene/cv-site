@@ -114,7 +114,8 @@ function setColor(newColors) {
 
 export function getPalleteColors() {
     const imgFile = document.getElementById("imgfile");
-    if (isImage(imgFile) ) {
+    
+    if (imgFile && isImage(imgFile) ) {
         imgFile.crossOrigin = "Anonymous";
         const canvas = document.getElementById("canvas");
         var { width, height } = imgFile;
