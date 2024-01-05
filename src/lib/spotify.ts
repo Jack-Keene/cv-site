@@ -46,13 +46,14 @@ export const getNowPlaying = async () => {
         }
     });
 };
-
 export async function getNowPlayingItem() {
     const response = await getNowPlaying();
     if (response.status === 204 || response.status > 400) {
         return false;
     }
+
     const song = await response.json();
+    console.log(song)
     if (song.currently_playing_type !== 'track') {
         return false
     }

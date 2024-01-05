@@ -476,7 +476,8 @@ export const muiTheme: ThemeOptions = {
         MuiPaper: {
             styleOverrides: {
                 root: {
-                    backgroundColor: theme.color.primary["600"],
+                    backgroundColor: theme.color.primary["700"],
+                    
                 }
             }
         },
