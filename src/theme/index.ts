@@ -528,9 +528,7 @@ export const muiTheme: ThemeOptions = {
                 },
             },
         },
-        MuiIcon: {
-            defaultProps: { fontSize: "inherit" },
-        },
+
         MuiAlert: {
             styleOverrides: {
                 root: {
