@@ -18,6 +18,9 @@ function App() {
             <ExperienceUpdate />
             <Projects />
             <Contact />
+            <footer>
+                This is an old version of my CV site visit <a href='https://jackkeene.com/'>JackKeene.com</a> for the latest updates
+            </footer>
         </div>            
         );
 }
