@@ -53,7 +53,6 @@ export async function getNowPlayingItem() {
     }
 
     const song = await response.json();
-    console.log(song)
     if (song.currently_playing_type !== 'track') {
         return false
     }

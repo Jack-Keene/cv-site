@@ -477,9 +477,10 @@ export const muiTheme: ThemeOptions = {
             styleOverrides: {
                 root: {
                     backgroundColor: theme.color.primary["700"],
-                    
+                    border: "none"                    
                 }
-            }
+            },
+            
         },
         MuiBottomNavigation: {
             styleOverrides: {
