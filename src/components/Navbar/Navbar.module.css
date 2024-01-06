@@ -64,6 +64,6 @@
     justify-content: center;
     height: 80px;
     width: 80px;
-    font-size: 40px;
+    font-size: 40px !important;
     border-radius: 40px;
 }
