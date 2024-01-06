@@ -1,0 +1,166 @@
+.spotify {
+    background-size: 600% 600%;
+}
+
+.absolute {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.relative {
+    position: relative;
+    border: 5px solid lightcoral;
+  }
+
+.spotifyWidget {
+    background-image: linear-gradient(to left, var(--c1), var(--c2), var(--c3), var(--c4), var(--c7), var(--c6), var(--c7), var(--c8));
+    display: grid;
+    grid-template-columns: 3fr 7fr 1fr;
+    flex-direction: row;
+    height: 80px;
+    width: 375px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 7px;
+    transition: width 1s, height 1s, right 1s, bottom 1s, border-radius 1s;
+    -webkit-animation: AnimationName 38s ease infinite;
+    -moz-animation: AnimationName 38s ease infinite;
+    animation: AnimationName 38s ease infinite;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.spotifyClosed {
+    background-image: linear-gradient(45deg, #000, var(--c1), #FFF, var(--c2), var(--c3), var(--c4), var(--c7), var(--c6), var(--c7), var(--c8));
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 1s, height 1s, right 1s, bottom 1s, border-radius 1s;
+    -webkit-animation: colorEffect 8s ease infinite;
+    -moz-animation: colorEffect 8s ease infinite;
+    animation: colorEffect 8s ease infinite;
+}
+
+.spotifyOffline {
+    background-color: #333;
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 1s, height 1s, right 1s, bottom 1s, border-radius 1s;
+    -webkit-animation: colorEffect 8s ease infinite;
+    -moz-animation: colorEffect 8s ease infinite;
+    animation: colorEffect 8s ease infinite;
+}
+
+
+.albumImageClosed {
+    width: 0px;
+    /* bottom: -250px; */
+    position: absolute;
+}
+
+
+.closed {
+    align-self: center;
+    height: 45px;
+}
+
+.canvas {
+    display: none;
+}
+
+.albumImage {
+    height: 66px;
+    border-radius: 10px;
+}
+
+.songInfo {
+    align-self: flex-end;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    min-width: 1px;
+}
+
+.logo {
+    align-self: flex-start;
+    justify-self: flex-end;
+    color: #FFF !important;
+}
+
+.nowPlaying {
+    text-transform: uppercase;
+    color: rgb(225, 227, 240);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.artist {
+    color: #efedf0ff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.song {
+    color: #fefefeff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+@-webkit-keyframes colorEffect {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes colorEffect {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes colorEffect {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 51%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
