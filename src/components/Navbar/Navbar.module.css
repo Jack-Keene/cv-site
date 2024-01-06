@@ -10,7 +10,7 @@
 }
 
 .sectionButton {
-    padding: 1rem;
+    padding: 1rem !important;
     cursor: pointer;
     align-self: flex-start;
 }
