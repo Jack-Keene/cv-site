@@ -2,7 +2,6 @@ import React from "react";
 import styles from './LandingPage.module.css'
 import ExperiencePage from "../Experience/Experience";
 import AboutPage from "../About/About";
-import Contact from "../Contact/Contact";
 import ProjectsPage from "../Projects/Projects";
 
 export default function LandingPage() {
