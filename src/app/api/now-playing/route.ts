@@ -6,5 +6,4 @@ export async function GET() {
     const res = NextResponse.json(response);
     res.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
     return res
-    return NextResponse.json(response)
 }
