@@ -12,41 +12,57 @@ const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
 
 const getAccessToken = async () => {
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
+    try {
+        const response = await fetch(TOKEN_ENDPOINT, {
+            method: "POST",
+            headers: {
+                Authorization: `Basic ${basic}`,
+                "Content-Type": "application/x-www-form-urlencoded",
+                'Cache-Control': 'no-store',
+            },
+            body: querystring.stringify({
+                grant_type: "refresh_token",
+                refresh_token,
+            }),
+        });
 
-    const response = await fetch(TOKEN_ENDPOINT, {
-        method: "POST",
-        headers: {
-            Authorization: `Basic ${basic}`,
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: querystring.stringify({
-            grant_type: "refresh_token",
-            refresh_token,
-            client_id
-        }),
-    });
-    return response.json();
+        // Check if the response is not ok
+        if (!response.ok) {
+            console.error(`Failed to fetch access token: ${response.status} ${response.statusText}`);
+            throw new Error("Failed to fetch access token");
+        }
+
+        const data = await response.json();
+
+        // Check if the response does not contain the access token
+        if (!data.access_token) {
+            throw new Error("Access token not found in the response");
+        }
+
+        // Return only the access token
+        return data.access_token;
+    } catch (error) {
+        console.error("Error getting access token:", error);
+        throw error;  // Re-throw the error after logging it
+    }
 };
-
-
 export const getTopTracks = async () => {
     const { access_token } = await getAccessToken();
     return fetch(TOP_TRACKS_ENDPOINT, {
         headers: {
             Authorization: `Bearer ${access_token}`,
-            'Cache-Control': 'no-cache, no-store, must-revalidate',  // Prevent caching
-        },        
-        cache: 'no-store'
+            'Cache-Control': 'no-store',
+        },
     });
 };
 
 
 export const getNowPlaying = async () => {
-    const { access_token } = await getAccessToken();
+    const access_token  = await getAccessToken();
     return fetch(NOW_PLAYING_ENDPOINT, {
         headers: {
             Authorization: `Bearer ${access_token}`,
-            'Cache-Control': 'no-cache, no-store, must-revalidate',  // Prevent caching
+            'Cache-Control': 'no-store',
         },
         cache: 'no-store'
     });
