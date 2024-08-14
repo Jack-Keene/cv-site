@@ -22,6 +22,7 @@ const getAccessToken = async () => {
         body: querystring.stringify({
             grant_type: "refresh_token",
             refresh_token,
+            client_id
         }),
     });
     return response.json();
