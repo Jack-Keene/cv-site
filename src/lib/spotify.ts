@@ -34,6 +34,7 @@ export const getTopTracks = async () => {
     return fetch(TOP_TRACKS_ENDPOINT, {
         headers: {
             Authorization: `Bearer ${access_token}`,
+            'Cache-Control': 'no-cache, no-store, must-revalidate',  // Prevent caching
         },        
         cache: 'no-store'
     });
@@ -44,7 +45,8 @@ export const getNowPlaying = async () => {
     const { access_token } = await getAccessToken();
     return fetch(NOW_PLAYING_ENDPOINT, {
         headers: {
-            Authorization: `Bearer ${access_token}`
+            Authorization: `Bearer ${access_token}`,
+            'Cache-Control': 'no-cache, no-store, must-revalidate',  // Prevent caching
         },
         cache: 'no-store'
     });
