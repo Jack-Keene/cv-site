@@ -3,6 +3,7 @@ module.exports = {
     async headers() {
       return [
         {
+          target: 'serverless',
           source: '/about',
           headers: [
             {
