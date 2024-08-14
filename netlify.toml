@@ -1,0 +1,19 @@
+[build]
+  publish = ".next"  # This should point to the directory where your built files are located
+  command = "npm run build"  # Replace with your build command
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  headers = { "Cache-Control" = "no-store, max-age=0" }
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store, max-age=0"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"  # Example for static assets, adjust as needed
