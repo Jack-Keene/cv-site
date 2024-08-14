@@ -7,7 +7,13 @@ export function useNowPlaying() {
     const { data, error, isLoading } = useSWR(
         "/api/now-playing",
         fetcher,
-        { refreshInterval: 3000 }
+        {
+            refreshInterval: 5000,  // Adjust the interval
+            revalidateOnFocus: true, // Revalidate when window gains focus
+            revalidateOnReconnect: true, // Revalidate when reconnecting
+            revalidateIfStale: true, // Revalidate if data is stale
+            dedupingInterval: 0, // Ensure it fetches on each call
+        }
     );
 
     return {
