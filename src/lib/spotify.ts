@@ -18,7 +18,7 @@ const getAccessToken = async () => {
         headers: {
             Authorization: `Basic ${basic}`,
             "Content-Type": "application/x-www-form-urlencoded",
-            'Cache-Control': 'no-store',
+            "Cache-Control": "no-store",
         },
         body: querystring.stringify({
             grant_type: "refresh_token",
@@ -28,50 +28,12 @@ const getAccessToken = async () => {
     return response.json();
 };
 
-// const getAccessToken = async () => {
-//     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
-//     console.log("basic")
-//     console.log(refresh_token)
-//     try {
-//         const response = await fetch(TOKEN_ENDPOINT, {
-//             method: "POST",
-//             headers: {
-//                 Authorization: `Basic ${basic}`,
-//                 "Content-Type": "application/x-www-form-urlencoded",
-//                 'Cache-Control': 'no-store',
-//             },
-//             body: querystring.stringify({
-//                 grant_type: "refresh_token",
-//                 refresh_token,
-//             }),
-//         });
-
-//         // Check if the response is not ok
-//         if (!response.ok) {
-//             console.error(`Failed to fetch access token: ${response.status} ${response.statusText}`);
-//             throw new Error("Failed to fetch access token");
-//         }
-
-//         const data = await response.json();
-
-//         // Check if the response does not contain the access token
-//         if (!data.access_token) {
-//             throw new Error("Access token not found in the response");
-//         }
-
-//         // Return only the access token
-//         return data.access_token;
-//     } catch (error) {
-//         console.error("Error getting access token:", error);
-//         throw error;  // Re-throw the error after logging it
-//     }
-// };
 export const getTopTracks = async () => {
     const { access_token } = await getAccessToken();
     return fetch(TOP_TRACKS_ENDPOINT, {
         headers: {
             Authorization: `Bearer ${access_token}`,
-            'Cache-Control': 'no-store',
+            'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
         },
     });
 };
@@ -79,10 +41,11 @@ export const getTopTracks = async () => {
 
 export const getNowPlaying = async () => {
     const  {access_token}  = await getAccessToken();
+    console.log(access_token)
     return fetch(NOW_PLAYING_ENDPOINT, {
         headers: {
             Authorization: `Bearer ${access_token}`,
-            'Cache-Control': 'no-store',
+            'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
         },
         cache: 'no-store'
     });
