@@ -1,0 +1,16 @@
+.main {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: none;
+    left: 440px;
+    width: calc(100% - 440px);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #353631b9;
+}

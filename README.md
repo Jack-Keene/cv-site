@@ -1,8 +1,17 @@
-## Personal Website built with React.js
-This project was built by me as an introduction to React.js and serves as a portfolio website for my other projects.
+curl -H "Authorization: Basic MWMzOGRhNjIxNjE3NDUyM2I2NmI2NzVmMDJiMDI4ZGM6ZTg0N2MwOWQ1MTM5NDhiZmJlOWE5Yjk4NzA5NDc3OTc=" -d grant_type=authorization_code -d code=AQDIpprSZgF6SLGFbZdG3WDMQVRTadhdoLF_2lx-c-W1UysSXoOPldLHLcik88XUuqHTUxbr5UzrZRdI-9H8icVwh7Vggv2xSTANDlbb4gBM4fLaU3kE00rKtiiu4FD7pK3LcDVSFChfbKUhay_jK2SHqPsr_RJhCEGI8CAHf_IE8crU5cIQhcQIWWZoJKYOaDJZE3Y38CP_vHryZi9P0hIF5mJUMQ -d redirect_uri=http://localhost:3000/ https://accounts.spotify.com/api/token
 
-The live site can be found at [www.jackkeene.com](https://jackkeene.com).
+curl "https://api.spotify.com/v1/me/player/currently-playing" \
+-H "Authorization: Bearer BQAbmbuvV3nF7FAxPeDFNWjFMLxYi0qtEQWGFa2r1x4cC8TWMrbz1nBmjZ3cszXMRAufrcFHdUyXnJrwDusGeottPT7ANJf5rMIgLO4mE_xuXqSBJBTK-mmOGBUvRm-R2wUYlZLPh_36SWpNb35zyO0vhO9ZzK73HdOY1zugMGxldQZAwuw6yY8" 
 
+BQAbmbuvV3nF7FAxPeDFNWjFMLxYi0qtEQWGFa2r1x4cC8TWMrbz1nBmjZ3cszXMRAufrcFHdUyXnJrwDusGeottPT7ANJf5rMIgLO4mE_xuXqSBJBTK-mmOGBUvRm-R2wUYlZLPh_36SWpNb35zyO0vhO9ZzK73HdOY1zugMGxldQZAwuw6yY8
 
+curl "https://api.spotify.com/v1/me/player/devices" \
+     -H "Authorization: Bearer  BQAbmbuvV3nF7FAxPeDFNWjFMLxYi0qtEQWGFa2r1x4cC8TWMrbz1nBmjZ3cszXMRAufrcFHdUyXnJrwDusGeottPT7ANJf5rMIgLO4mE_xuXqSBJBTK-mmOGBUvRm-R2wUYlZLPh_36SWpNb35zyO0vhO9ZzK73HdOY1zugMGxldQZAwuw6yY8"
 
+curl --request GET \
+  --url https://api.spotify.com/v1/me/player/currently-playing \
+  --header 'Authorization: Bearer BQAbmbuvV3nF7FAxPeDFNWjFMLxYi0qtEQWGFa2r1x4cC8TWMrbz1nBmjZ3cszXMRAufrcFHdUyXnJrwDusGeottPT7ANJf5rMIgLO4mE_xuXqSBJBTK-mmOGBUvRm-R2wUYlZLPh_36SWpNb35zyO0vhO9ZzK73HdOY1zugMGxldQZAwuw6yY8'
 
+curl --request GET \
+  --url https://api.spotify.com/v1/me/player/currently-playing \
+  --header 'Authorization: Bearer BQAbmbuvV3nF7FAxPeDFNWjFMLxYi0qtEQWGFa2r1x4cC8TWMrbz1nBmjZ3cszXMRAufrcFHdUyXnJrwDusGeottPT7ANJf5rMIgLO4mE_xuXqSBJBTK-mmOGBUvRm-R2wUYlZLPh_36SWpNb35zyO0vhO9ZzK73HdOY1zugMGxldQZAwuw6yY8'
